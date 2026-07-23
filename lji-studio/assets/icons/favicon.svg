@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LJI Studio">
+  <rect width="64" height="64" rx="16" fill="#0B0D12"/>
+  <path d="M10 15h8v27h10v8H10V15Z" fill="#F4F7FB"/>
+  <path d="M31 15h8v22c0 9-4 13-12 13h-2v-8h2c3 0 4-1 4-5V15Z" fill="#F4F7FB"/>
+  <path d="M46 15h8v35h-8V15Z" fill="#3B82F6"/>
+</svg>

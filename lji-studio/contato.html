@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contato e Orçamento | LJI Studio</title>
+  <meta name="description" content="Conte sobre seu projeto de site ou vídeo e receba uma recomendação de escopo da LJI Studio.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B0D12">
+  <link rel="canonical" href="https://www.ljistudio.com.br/contato.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="LJI Studio - início"><span class="brand__mark" aria-hidden="true">LJI</span><span class="brand__name">LJI <small>STUDIO</small></span></a><button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation" data-menu-button><span></span></button><nav class="navigation" id="main-navigation" aria-label="Navegação principal" data-navigation><ul class="navigation__list"><li><a class="navigation__link" href="index.html">Início</a></li><li><a class="navigation__link" href="projetos.html">Projetos</a></li><li><a class="navigation__link" href="servicos.html">Serviços</a></li><li><a class="navigation__link" href="sobre.html">Sobre</a></li><li><a class="navigation__link" href="contato.html" aria-current="page">Contato</a></li></ul><a class="button button--primary button--small" href="#formulario">Pedir análise gratuita</a></nav></div></header>
+
+  <main id="conteudo">
+    <header class="page-hero"><div class="container page-hero__content" data-reveal><ol class="breadcrumb" aria-label="Navegação estrutural"><li><a href="index.html">Início</a></li><li aria-current="page">Contato</li></ol><p class="eyebrow">Análise inicial gratuita</p><h1>Conte sobre seu projeto. Eu ajudo a organizar o próximo passo.</h1><p>Não precisa conhecer termos técnicos: explique seu negócio, o que deseja melhorar e quando gostaria de começar. A resposta chega em até 1 dia útil.</p></div></header>
+
+    <section class="section" id="formulario" aria-labelledby="form-title">
+      <div class="container contact-layout">
+        <form class="contact-form" action="/api/contato" method="post" data-api-form="contato" data-reveal>
+          <h2 id="form-title" class="form-field--full">Sobre você e o projeto</h2>
+          <div class="form-field"><label class="form-label" for="name">Seu nome</label><input class="form-control" id="name" name="nome" type="text" maxlength="80" autocomplete="name" required></div>
+          <div class="form-field"><label class="form-label" for="company">Empresa ou perfil</label><input class="form-control" id="company" name="empresa" type="text" maxlength="100" autocomplete="organization"></div>
+          <div class="form-field"><label class="form-label" for="phone">WhatsApp</label><input class="form-control" id="phone" name="whatsapp" type="tel" maxlength="30" autocomplete="tel" inputmode="tel" required></div>
+          <div class="form-field"><label class="form-label" for="email">E-mail</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="form-field"><label class="form-label" for="service">Em que posso ajudar?</label><select class="form-control" id="service" name="servico" data-service-select required><option value="">Selecione</option><option value="landing-page">Landing page</option><option value="site-institucional">Site institucional</option><option value="presenca-completa">Presença completa</option><option value="4-reels">4 Reels</option><option value="8-reels">8 Reels</option><option value="12-reels">12 Reels</option><option value="site-videos">Site + vídeos</option><option value="nao-sei">Ainda não sei</option></select></div>
+          <div class="form-field"><label class="form-label" for="start">Quando gostaria de começar?</label><select class="form-control" id="start" name="inicio" required><option value="">Selecione</option><option>Assim que possível</option><option>Nos próximos 30 dias</option><option>Entre 1 e 3 meses</option><option>Ainda estou planejando</option></select></div>
+          <div class="form-field form-field--full"><label class="form-label" for="goal">Qual é o principal objetivo?</label><input class="form-control" id="goal" name="objetivo" type="text" maxlength="300" placeholder="Ex.: apresentar melhor meus serviços e receber contatos" required></div>
+          <div class="form-field"><label class="form-label" for="budget">Faixa de investimento</label><select class="form-control" id="budget" name="orcamento" required><option value="">Selecione</option><option>Até R$ 1.500</option><option>R$ 1.500-3.000</option><option>R$ 3.000-5.000</option><option>Acima de R$ 5.000</option><option>Ainda não sei</option></select></div>
+          <div class="form-field"><label class="form-label" for="links">Links atuais</label><input class="form-control" id="links" name="links" type="url" placeholder="https://" inputmode="url"></div>
+          <div class="form-field form-field--full"><label class="form-label" for="message">Conte um pouco mais</label><textarea class="form-control" id="message" name="mensagem" minlength="10" maxlength="2000" placeholder="O que existe hoje? O que você gostaria de melhorar?" required></textarea></div>
+          <div class="form-consent"><input id="consent" name="privacidade" type="checkbox" value="true" required><label for="consent">Autorizo a LJI Studio a usar estes dados para responder à solicitação e confirmo que li a <a href="politica-de-privacidade.html">Política de Privacidade</a>.</label></div>
+          <div class="form-honeypot" aria-hidden="true"><label for="contact-website">Não preencha este campo</label><input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="turnstile-slot" data-turnstile-action="contato" role="group" aria-label="Verificação antispam"></div>
+          <button class="button button--primary" type="submit">Enviar meu projeto</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-aside" aria-label="Informações de contato" data-reveal>
+          <div class="contact-aside__card"><p class="eyebrow">O que acontece depois</p><h2>Uma resposta clara, não uma ligação de vendas surpresa.</h2><ul class="contact-aside__list"><li><strong>Prazo de resposta</strong>Até 1 dia útil.</li><li><strong>Primeiro retorno</strong>Perguntas objetivas ou uma recomendação inicial.</li><li><strong>Próximo passo</strong>Conversa de diagnóstico quando fizer sentido.</li></ul></div>
+          <div class="contact-aside__card" id="whatsapp"><h2>Prefere o WhatsApp?</h2><p>Envie uma mensagem com seu objetivo e o link atual do negócio.</p><a class="button button--ghost" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Leandro%21%20Encontrei%20a%20LJI%20Studio%20e%20quero%20conversar%20sobre%20um%20projeto.">Abrir WhatsApp</a></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true">LJI</span><span class="brand__name">LJI <small>STUDIO</small></span></a><p>Sites • Vídeos • Presença Digital<br>Presença que parece grande. Estratégia que cabe no seu negócio.</p></div><nav class="footer-column" aria-label="Navegação do rodapé"><h2>Navegação</h2><ul class="footer-links"><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="contato.html">Contato</a></li></ul></nav><div class="footer-column"><h2>Contato</h2><ul class="footer-contact"><li>contato@ljistudio.com.br</li><li>Ponta Grossa, Paraná • Atendimento remoto</li><li><a href="politica-de-privacidade.html">Política de Privacidade</a></li></ul></div></div><div class="container footer-bottom"><span>© <span data-current-year>2026</span> LJI Studio. Todos os direitos reservados.</span><span>LJI Studio, por Leandro Jacinski.</span></div></footer>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
